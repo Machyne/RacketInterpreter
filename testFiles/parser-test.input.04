@@ -1,0 +1,4 @@
+(define mapreduce
+  (lambda (mapper reducer base-case data)
+    (foldl reducer base-case (map mapper data))))
+    

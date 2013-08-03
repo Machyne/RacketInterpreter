@@ -1,0 +1,17 @@
+3
+1.23
+-123
++123
+1 + 2 + 33
+(+ 1 2(+ 3 4))
+#t
+; Imma Comment
+#|Imma comment too!|#
+"I'm a string"
+Cymbal
+($yes? #T #f) 
+({[Symbol]	} )
+
+"bakón" #|The classiest type of bacon|#
+(+ 3 4) ;;asdflkhoi
+(yolofish #| bacon bacon bakón |# "walrus ;; still a srting\" and still even now" 3.4}

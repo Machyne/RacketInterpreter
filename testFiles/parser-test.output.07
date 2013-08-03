@@ -1,0 +1,3 @@
+(define reducerHelp (lambda (cur element) (if (null? element) cur (cons element cur))))
+(another tree)
+syntax error

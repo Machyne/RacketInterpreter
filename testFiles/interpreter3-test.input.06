@@ -1,0 +1,22 @@
+(display "hello\nworld\"hello\tworld")
+(display "123456")
+(display "\n\t")
+
+(string-length "hello\nworld\"hello\tworld")
+(string-length "123456")
+(string-length "\n\t")
+
+(equal? 5 5.0)
+(equal? 5 5)
+(equal? 4 4.0)
+(equal? "yolo" "fish")
+(equal? "nootNoot" (quote nootNoot) )
+(define hullabaloo (quote (a b (c) ((d)) ((e f) g))) )
+(equal? hullabaloo (quote (a b (c) ((d)) ((e f) g))) )
+
+(begin 1)
+(if #t (begin 1 2 4) 0)
+(begin 1 (display "yolo") 2)
+(begin 1 (define x 3))
+(begin 10 (display "hi") (display "bye") x)
+(begin)

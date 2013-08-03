@@ -1,0 +1,21 @@
+(define curry3
+  (lambda (f)
+    (lambda (x)
+      (lambda (y)
+        (lambda (z)
+          (f x y z))))))
+
+(curry3 +)
+((curry3 +) 1)
+(((curry3 +) 1) 2)
+((((curry3 +) 1) 2) 3)
+
+(define uncurry3
+  (lambda(f)
+    (lambda (x y z)
+      (((f x)y)z))))
+
+((uncurry3 (curry3 +))2 3 4)
+
+(define plusSeven (((curry3 +)3)4))
+(plusSeven 3)

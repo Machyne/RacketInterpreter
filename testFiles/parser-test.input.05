@@ -1,0 +1,5 @@
+(define foldl
+  (lambda (f value 1	st)
+    (if (null $1st)
+        value
+        (foldl f (f value (car $1st)) (cdr $1st)))))

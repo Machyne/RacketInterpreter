@@ -1,0 +1,11 @@
+(quote (a b))
+
+(car (quote (a b)))
+(cdr (quote (a b)))
+
+(define last
+	(lambda (L)
+	(if (null? (cdr L)) (car L) (last (cdr L)))))
+
+(last (quote (1 2 3 4 a)))
+(last (quote (1 2 3 yolo (haha oaiwn) a 4)))

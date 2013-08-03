@@ -1,0 +1,34 @@
+
+
+
+AS OF INITIAL COMMIT
+====================
+
+Group Walrusauruserexoniis:    (<-- plural of walrus)
+--------------------
+Matt Cotter
+Greg Fournier
+Joy  Hill
+
+As of Interp 3
+--------------------
++ Avery looked over our final test file while we were failing the test. We ended up finding later that AND was to hard of worker. It was told to live its life and slow down.
+
+As of Interp 2
+--------------------
++ We found %g for printing floats on Stack Overflow.
+
+As of Interp 1
+--------------------
++ We heavily modified/fixed and used the code that Matt and Greg wrote for the vectors assignment to implement our vectors... so credit to ourselves..?
++ We "borrowed" a picture on the board of cons cells drawn by team Lilac(EvKennaAl)
+
+
+As of the Parser
+--------------------
++ Only our conversations with Laura.
+
+
+As of the Tokenizer
+--------------------
++ We talked with Mikenna Everett and Alby Himelick about a few memory issues but ultimately went a different way.

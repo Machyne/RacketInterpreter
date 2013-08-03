@@ -1,0 +1,7 @@
+(cons (quote a) (quote (b c z)))
+(cons (quote (a feesh)) (quote (b c z)))
+(define yollo (cons (quote a) (quote b)))
+yollo
+
+(cons (quote 0) yollo)
+(cdr yollo)

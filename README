@@ -1,0 +1,52 @@
+    R A C K E T    I N T E R P R E T E R
+--------------------------------------------
+All "Added Features":
+	Matt Cotter
+
+Created initially by:
+	Matt Cotter, Greg Fournier, Joy Hill
+
+-- Description --
+This program will interpret Racket code either from an input file or from the terminal window in a REPL. This is exciting.
+Orignially, this was created for my Programming Languages class in the Spring of 2013. I intend to fix any remaining bugs, eventually implement a garbage cleaner, and continue adding on features of the Racket language.
+
+-- Added Features --
+Coming soon...
+
+
+
+-- Original Features --
+Special Forms
+	+ if
+	+ let
+	+ letrec
+	+ let*
+	+ define
+	+ quote
+	+ cond
+	+ begin
+	+ lambda 
+	+ (function application)
+
+Primitive Functions
+	+ null?
+	+ list?
+	+ car
+	+ cdr
+	+ cons
+	+ addition (+)
+	+ subtraction (-)
+	+ multiplication (*)
+	+ division (/)
+	+ modulo
+	+ less than or equal to (<=)
+	+ greater than or equal to (>=)
+	+ less than (<)
+	+ greater than (>)
+	+ equal? 
+	+ numerical equality (=)
+	+ display
+	+ string-length
+	+ not
+	+ and (eager implementation)
+	+ or (eager implementation)

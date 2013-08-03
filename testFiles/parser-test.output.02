@@ -1,0 +1,1 @@
+(define curry3 (lambda (fun) (lambda (x) (lambda (y) (lambda (z) (fun x y z))))))

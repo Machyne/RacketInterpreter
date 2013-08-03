@@ -1,0 +1,6 @@
+(null? 4)
+(null? (quote a))
+(null? (quote (b c z)))
+(null? (quote (b)) )
+(null? (quote (())) )
+(null? (quote ()))

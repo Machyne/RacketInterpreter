@@ -1,0 +1,14 @@
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Open: (
+Integer: 7
+Sybmol: *
+Integer: 5
+Sybmol: +
+Integer: 3
+Close: )
+String: "7 + 2 + #| WHAT? |# 5"
+String: "\t \n \s escaped strings"

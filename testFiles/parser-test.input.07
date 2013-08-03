@@ -1,0 +1,26 @@
+(define 
+reducerHelp
+(lambda (cur element)
+    (if 
+    (null? 
+
+
+    element) cur
+   
+ (cons 
+
+
+
+   element cur))))
+ ;one tree up there
+
+ (another tree)
+
+ (+ 1 
+#| Oh look an error |#
+
+ error) (oh-Hi-There
+
+sennyor
+
+ walrii)

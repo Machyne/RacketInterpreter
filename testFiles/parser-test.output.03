@@ -1,0 +1,1 @@
+(define uncurry3 (lambda (fun) (lambda (x y z) (((fun x) y) z))))

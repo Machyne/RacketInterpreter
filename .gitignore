@@ -1,0 +1,12 @@
+tokenizer.c
+*.o
+*.dSYM
+tokenizer
+parser
+interpreter
+*.*~
+._*
+*.orig
+testFiles/._*
+testFiles/*.*~
+

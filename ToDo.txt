@@ -1,0 +1,4 @@
+Things I would like to do from here:
+    + Implement more primitives especially higher order functions
+    + Garbage Collection
+    + more to come in time...

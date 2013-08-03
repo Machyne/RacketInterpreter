@@ -1,0 +1,10 @@
+(quote (quote 5
+	(45 44 12)
+	$Money
+	(cash   money)
+	(+ 
+			walrus 1)
+	eatabagle 
+
+		5 times
+	("wazzZap")))

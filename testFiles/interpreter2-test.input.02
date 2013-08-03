@@ -1,0 +1,6 @@
+(define plusfive 
+	(lambda (x) (+ x 5)) )
+(plusfive 12)
+(plusfive 3.4)
+
+(let ((x 5) (y 6)) (+ x y))

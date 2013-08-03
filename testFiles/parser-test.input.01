@@ -1,0 +1,15 @@
+;Answers to Racket Intro Lab, Part 6 #4 and #5
+(define keep-first-n
+   (lambda (N L)
+         (cond ((> N (length L)) L)
+         ((<= N 0) ())
+         ((= N 1) (list (car L)))
+          (else (append (list (car L)) (keep-first-n(- N 1) (cdr L)))))))
+;(keep-first-n 3 '(a b c d e f g h i))
+
+(define sum
+  (lambda (L)
+    (if (= (length L) 0) 0
+    (+ (car L) (sum(cdr L))))))
+;(sum ())
+         

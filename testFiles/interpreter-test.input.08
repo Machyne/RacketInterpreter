@@ -1,0 +1,13 @@
+(let ((x 
+				(let ((x (let ((y 5) (x #t)) (if x y 7)))) 
+					(if #t x "yo"))))
+
+			(if #t x 12.3))
+
+(let ((x 
+		(let ((x 
+				(let ((x (let ((y 5) (x #t)) (if x y 7)))) 
+					(if #t x "yo"))))
+
+			(if #t x 12.3))))
+	x)

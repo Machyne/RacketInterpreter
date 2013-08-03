@@ -1,0 +1,62 @@
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Integer: 3
+Real: 1.230000
+Integer: -123
+Integer: 123
+Integer: 1
+Sybmol: +
+Integer: 2
+Sybmol: +
+Integer: 33
+Open: (
+Sybmol: +
+Integer: 1
+Integer: 2
+Open: (
+Sybmol: +
+Integer: 3
+Integer: 4
+Close: )
+Close: )
+Bool: true
+String: "I'm a string"
+Sybmol: Cymbal
+Open: (
+Sybmol: $yes?
+Bool: true
+Bool: false
+Close: )
+Open: (
+Open: {
+Open: [
+Sybmol: Symbol
+Close: ]
+Close: }
+Close: )
+String: "bakón"
+Open: (
+Sybmol: +
+Integer: 3
+Integer: 4
+Close: )
+Open: (
+Sybmol: yolofish
+String: "walrus ;; still a srting\" and still even now"
+Real: 3.400000
+Close: }

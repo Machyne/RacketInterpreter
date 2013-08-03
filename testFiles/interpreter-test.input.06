@@ -1,0 +1,3 @@
+(let ((bacon #t)) (if bacon (if #f moreBreak (quote "hiyya")) breakBreakBREAK))
+"Yeah, so that worked cause we're completely dynamic"
+(let () (if #f $money 12))

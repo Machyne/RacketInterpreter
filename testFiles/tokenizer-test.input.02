@@ -1,0 +1,6 @@
+;Submission by walrii and walrusser
+y0l0 + 5
+1.2 .3
+(car (cdr (cdr (apple orange pear grapefruit))))
+(car (car (cdr (cdr (car (((apple) (orange) (pear) (grapefruit))))))))
+(car (car (car (cdr (cdr (apple (orange) ((pear)) (((grapefruit)))))))))

@@ -1,0 +1,37 @@
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+String: "String #|still a string|# hi"
+Open: (
+Sybmol: define
+Open: (
+Sybmol: lambda
+Open: (
+Sybmol: x
+Close: )
+Sybmol: things
+Close: )
+Real: 23432.000000
+Real: 4.000000
+Sybmol: CymbalBang
+String: "Geronimo! 123"
+Sybmol: ACM
+Sybmol: CODE
+Sybmol: OF
+Sybmol: ETHI23CS
+Sybmol: AND
+Sybmol: PROFESSIONAL
+Sybmol: CONDUCT
+Sybmol: lack3
+Sybmol: the
+Sybmol: imagination

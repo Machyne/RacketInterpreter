@@ -1,0 +1,5 @@
+'(a b c z)
+'((a feesh) b c z)
+'(a . b)
+'(0 a . b)
+'b

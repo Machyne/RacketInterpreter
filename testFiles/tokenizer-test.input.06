@@ -1,0 +1,8 @@
+this is a test
+#|a what?|#
+"a test"
+#t
+#f
+234.54
+(define plusThree (lambda (x) (+ x 3)))
+"don't break"

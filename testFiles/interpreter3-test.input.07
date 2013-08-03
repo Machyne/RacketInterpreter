@@ -1,0 +1,64 @@
+(let ((is-odd?
+          (lambda (n)
+            (if (= n 0) #f
+                  (if (= n 1) #t
+                  (is-even? (- n 1))))))
+         (is-even?
+          (lambda (n)
+            (if (= n 0) #f
+                  (if (= n 1) #t
+                  (is-odd? (- n 1)))))))
+  (is-odd? 223))
+
+(let* ((x 5) (y x)) y)
+(let* ((x (lambda (y) (+ y 5))) (y x)) (y 4))
+
+(letrec ((x y)
+       (y 5))
+  x)
+
+((lambda () 0))
+
+(letrec ((x (lambda () y) )
+       (y (lambda () 5)))
+  ((x)) )
+
+(letrec ((is-odd?
+          (lambda (n)
+            (if (= n 0) #f
+                  (if (= n 1) #t
+                  (is-even? (- n 1))))))
+         (is-even?
+          (lambda (n)
+            (if (= n 0) #f
+                  (if (= n 1) #t
+                  (is-odd? (- n 1)))))))
+  (is-odd? 223))
+
+
+
+(define case #t)
+(define statement "whee")
+(define case2 (lambda () #f))
+(define state2 "aww")
+(define elseState "nooo")
+
+ (cond (#f statement)
+       ((case2) state2))
+
+
+(and 1 #t 0 4 5)
+(and 1 #f 3 #t 5)
+(and)
+(and #t #f)
+(and (quote yollo))
+(and #f #f 1 2)
+(or)
+(or #f #f)
+(or #t #f)
+(or #f #f 1 2)
+
+(list? (quote gravy))
+(list? (quote (gravy)) )
+(list? 1)
+(list? (quote (()) ))

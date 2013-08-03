@@ -1,0 +1,19 @@
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Open: (
+Sybmol: Imma
+Sybmol: Test
+Close: )
+Open: (
+Integer: 1
+Sybmol: -
+Integer: 2
+Close: )
+String: "Strings!"
+String: "new 
+line
+chars"
+Sybmol: asdf

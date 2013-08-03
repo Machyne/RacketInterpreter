@@ -1,0 +1,32 @@
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Lex tokenized a line.
+Sybmol: this
+Sybmol: is
+Sybmol: a
+Sybmol: test
+String: "a test"
+Bool: true
+Bool: false
+Real: 234.540000
+Open: (
+Sybmol: define
+Sybmol: plusThree
+Open: (
+Sybmol: lambda
+Open: (
+Sybmol: x
+Close: )
+Open: (
+Sybmol: +
+Sybmol: x
+Integer: 3
+Close: )
+Close: )
+Close: )
+String: "don't break"

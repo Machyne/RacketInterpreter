@@ -1,0 +1,72 @@
+(define myLength (lambda (L)
+                 (letrec ((lengthy (lambda (L num) (if (null? L) num (lengthy (cdr L) (+ 1 num))))))
+                   (lengthy L 0)))
+                 )
+
+(define myOrmap (lambda (proc llst) 
+  (letrec ((noot (lambda (L) (cond ;ala N00t N00t 
+    [(null? L) #f]
+    [(equal? #f (proc (car L))) (noot (cdr L))]
+    [#t (proc (car L))]))))
+  (noot llst))))
+
+(define myAndmap (lambda (proc llst) 
+  (letrec ((noot (lambda (L lastVal) (cond
+    [(null? L) lastVal]
+    [(equal? #f (proc (car L))) #f]
+    [#t (noot (cdr L) (proc (car L)))]))))
+  (noot llst #t))))
+
+
+(define is-element-of? (lambda (a S)
+                         (let ((proc (if (list? a)
+                                         ;if a is a list, our procedure will be set-equal
+                                         (lambda (L) (set-equal? a L))
+                                         ;if a is a list, our procedure will be equal
+                                         (lambda (b) (equal? a b)))))
+                           (myOrmap proc S)))) ;myOrmap is lazy (will return as soon as it finds true :D )
+
+
+(define set-equal?
+  (lambda (x y)
+    (if (list? x)  ;x must be a list
+         (if (list? y) ;y must be a list
+          (if (= (myLength x) (myLength y)) ;the length is equal
+              (let ((f (lambda (a) (is-element-of? a y)))) ;check if each element of x is a member of y
+                (myAndmap f x)) #f) #f) #f))) ;make sure x is contained in y (also myAndmap is lazy :D )
+
+
+(define union (lambda (x y)
+  (letrec ((union-helper (lambda (x y L) ;a helper function that allows us to pass in an initial value for L
+                           ;(this way y doesnt get larger and slower as we recurse through the method)
+    (cond ((null? x) ;if car(x) is not in y, add it to L
+           L)
+          ((is-element-of? (car x) y)
+           (union-helper (cdr x) y L)) ;if car(x) is in y, it is already in L
+          (#t
+           (union-helper (cdr x) y (cons (car x) L))))))) ;if car(x) is not in y, add it to L
+    (union-helper x y y))))
+
+(define intersection (lambda (x y)
+  (letrec ((intersection-helper (lambda (x y L) ;a helper function that allows us to pass in an initial empty list as L
+    (cond ((null? x)
+           L)
+          ((is-element-of? (car x) y)  
+           (intersection-helper (cdr x) y (cons (car x) L))) ;if car(x) is in y, it gets added to L
+          (#t
+           (intersection-helper (cdr x) y L)))))) ;if car(x) is not in y, it does not get placed in L  
+    (intersection-helper x y (quote ()) ))))
+
+
+(equal? #f (set-equal? (quote (1 (2 3 (4 5)))) (quote (((3 (5 4) 2) 1)))) )
+(equal? #t (set-equal? (quote (1 (2 3 (4 5)))) (quote ((3 (5 4) 2) 1)) ))
+(equal? #t (set-equal? (quote (1 (2 3))) (quote ((3 2) 1))) )               
+(equal? #f (set-equal? (quote (1 2 3)) (quote ((3 2) 1))) )                 
+(equal? #f (set-equal? (quote (1 2 3)) (quote ((1 2 3)))) )                 
+(equal? #t (set-equal? (union (quote (1 (2) 3)) (quote (3 2 1))) (quote (1 2 3 (2)))))
+(equal? #t (set-equal? (union (quote ((1 2 3))) (quote ((3 4 5)))) (quote ((1 2 3) (3 4 5)))))
+(equal? #t (set-equal? (union (quote ((1 2 3))) (quote ((3 2 1)))) (quote ((1 2 3)))))
+(equal? #t (set-equal? (intersection (quote ((1 2 3))) (quote ((3 2 1)))) (quote ((1 2 3)))))
+(equal? #t (set-equal? (intersection (quote ((1 2 3))) (quote ((4 5 6)))) (quote ())))
+(equal? #t (set-equal? (intersection (quote ((1) (2) (3))) (quote ((2) (3) (4)))) (quote ((2) (3)))))
+
